@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <style>
+        table,
+        td,
+        th {
+            border: solid black 1px;
+            border-collapse: collapse;
+            padding: 15px;
+            width: 50%;
+        }
+
+        td {
+            width: 25px;
+        }
+
+        div,h2{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <form action="#">
+                <caption><h2>Hotel</h2></caption>
+                <tr>
+                    <th>Numero do quarto</th>
+                    <th>Tipo quarto</th>
+                    <th>Preço por noite</th>
+                    <th>Disponibilidade</th>
+                    <th>Imagem do quarto</th>
+                    <th>Reserva</th>
+                    <th>Quantidade</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Suite</td>
+                    <td>R$200</td>
+                    <td>
+                        <label for="dataMin">Data minima</label><br>
+                        <input type="date" name="dataMin" id="dataMin" min="2023-10-01">                      
+                        </fieldset>
+                        <br><br>
+                        <label for="dataMax">Data maxima</label><br>
+                        <input type="date" name="dataMax" id="dataMax" max="2023-10-31">
+                    </td>
+                    <td>
+                        <img src="img/suite.jpeg" alt="foto suite" width="200">
+                    </td>
+                    <td></td>
+                    <td>
+                        <label for="quantidade-quarto"></label>
+                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Quarto Familia</td>
+                    <td>R$100</td>
+                    <td>
+                        <label for="dataMin">Data minima</label><br>
+                        <input type="date" name="dataMin" id="dataMin" min="2023-10-01">                      
+                        </fieldset>
+                        <br><br>
+                        <label for="dataMax">Data maxima</label><br>
+                        <input type="date" name="dataMax" id="dataMax" max="2023-10-31">
+                    </td>
+                    <td>
+                        <img src="img/quarto_familia.jpg" alt="quarto-familia" width="200">
+                    </td>
+                    <td></td>
+                    <td>
+                        <label for="quantidade-quarto"></label>
+                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>De luxo</td>
+                    <td>R$500</td>
+                    <td>
+                        <label for="dataMin">Data minima</label><br>
+                        <input type="date" name="dataMin" id="dataMin" min="2023-10-01">                      
+                        </fieldset>
+                        <br><br>
+                        <label for="dataMax">Data maxima</label><br>
+                        <input type="date" name="dataMax" id="dataMax" max="2023-10-31">
+                    </td>
+                    <td>
+                        <img src="img/quarto_luxo.webp" alt="quarto-luxo" width="200">
+                    </td>
+                    <td></td>
+                    <td>
+                        <label for="quantidade-quarto"></label>
+                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+    <br><br>
+    <div>
+        <form action="#">
+            <caption><h2>Pagamento</h2></caption><br>
+            <label for="nome">Nome</label>
+            <input type="text">
+            <label for="check-in">Check-in</label>
+            <input type="date">
+            <label for="check-out">Check-out</label>
+            <input type="date">
+            <br><br>
+            <label for="pagamento">Numero do cartao</label>
+            <input type="number" required>
+            <label for="cvc">cvc</label>
+            <input type="number" required>
+            <label for="validade-cartao">Validade do cartao</label>
+            <input type="date" name="validade-cartao" id="validade-cartao" min="2023-11-01" required>
+        </form>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Reservar">
+        <input type="reset" value="Limpar">
+    </div>
+   
+</body>
+
+</html>
