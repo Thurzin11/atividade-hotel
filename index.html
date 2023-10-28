@@ -37,28 +37,25 @@
                     <th>Preço por noite</th>
                     <th>Disponibilidade</th>
                     <th>Imagem do quarto</th>
-                    <th>Reserva</th>
                     <th>Quantidade</th>
+                    <th>Reserva</th>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>Suite</td>
                     <td>R$200</td>
                     <td>
-                        <label for="dataMin">Data minima</label><br>
-                        <input type="date" name="dataMin" id="dataMin" min="2023-10-01">                      
-                        </fieldset>
-                        <br><br>
-                        <label for="dataMax">Data maxima</label><br>
-                        <input type="date" name="dataMax" id="dataMax" max="2023-10-31">
+                       <label for="Disponibilidade">Disponivel</label>
                     </td>
                     <td>
                         <img src="img/suite.jpeg" alt="foto suite" width="200">
                     </td>
-                    <td></td>
                     <td>
                         <label for="quantidade-quarto"></label>
-                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0">
+                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0" max="3">
+                    </td>
+                    <td>
+                        <input type="submit" value="Reservar">
                     </td>
                 </tr>
                 <tr>
@@ -66,20 +63,17 @@
                     <td>Quarto Familia</td>
                     <td>R$100</td>
                     <td>
-                        <label for="dataMin">Data minima</label><br>
-                        <input type="date" name="dataMin" id="dataMin" min="2023-10-01">                      
-                        </fieldset>
-                        <br><br>
-                        <label for="dataMax">Data maxima</label><br>
-                        <input type="date" name="dataMax" id="dataMax" max="2023-10-31">
+                        <label for="Disponibilidade">Disponivel</label>
                     </td>
                     <td>
                         <img src="img/quarto_familia.jpg" alt="quarto-familia" width="200">
                     </td>
-                    <td></td>
                     <td>
                         <label for="quantidade-quarto"></label>
-                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0">
+                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0" max="3">
+                    </td>
+                    <td>
+                        <input type="submit" value="Reservar">
                     </td>
                 </tr>
                 <tr>
@@ -87,20 +81,17 @@
                     <td>De luxo</td>
                     <td>R$500</td>
                     <td>
-                        <label for="dataMin">Data minima</label><br>
-                        <input type="date" name="dataMin" id="dataMin" min="2023-10-01">                      
-                        </fieldset>
-                        <br><br>
-                        <label for="dataMax">Data maxima</label><br>
-                        <input type="date" name="dataMax" id="dataMax" max="2023-10-31">
+                        <label for="Disponibilidade">Disponivel</label>
                     </td>
                     <td>
                         <img src="img/quarto_luxo.webp" alt="quarto-luxo" width="200">
                     </td>
-                    <td></td>
                     <td>
                         <label for="quantidade-quarto"></label>
-                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0">
+                        <input type="number" id="quantidade-quarto" name="quantidade-quarto" min="0" max="3">
+                    </td>
+                    <td>
+                        <input type="submit" value="Reservar">
                     </td>
                 </tr>
             </form>
